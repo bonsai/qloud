@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Images</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        h1 { color: #333; }
+        .gallery {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            margin-bottom: 1rem;
+        }
+        .filename {
+            font-weight: bold;
+            color: #555;
+            word-break: break-all;
+        }
+        .path {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 0.5rem;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Randomly Selected Images</h1>
+    <div class="gallery">
+
+        <div class="card">
+            <img src="Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1\Resource-Icons_07312025\Res_Migration-Modernization\Res_AWS-Migration-Hub_Refactor-Spaces-Environments_48.png" alt="Res_AWS-Migration-Hub_Refactor-Spaces-Environments_48.png">
+            <div class="filename">Res_AWS-Migration-Hub_Refactor-Spaces-Environments_48.png</div>
+            <div class="path">Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1\Resource-Icons_07312025\Res_Migration-Modernization\Res_AWS-Migration-Hub_Refactor-Spaces-Environments_48.png</div>
+        </div>
+        <div class="card">
+            <img src="Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1\Architecture-Service-Icons_07312025\Arch_Media-Services\16\Arch_AWS-Elemental-MediaLive_16.svg" alt="Arch_AWS-Elemental-MediaLive_16.svg">
+            <div class="filename">Arch_AWS-Elemental-MediaLive_16.svg</div>
+            <div class="path">Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1\Architecture-Service-Icons_07312025\Arch_Media-Services\16\Arch_AWS-Elemental-MediaLive_16.svg</div>
+        </div>
+    </div>
+</body>
+</html>

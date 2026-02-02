@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Quiz</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 { margin-bottom: 0.5rem; color: #333; }
+        .description { color: #666; margin-bottom: 2rem; }
+        
+        /* Initial State */
+        .init-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 0;
+        }
+
+        /* Quiz State */
+        .quiz-area { 
+            display: none; /* Hidden by default */
+            flex-direction: column; 
+            align-items: center; 
+        }
+        
+        .stats { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .image-container {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            background-color: #fafafa;
+            border-radius: 8px;
+            border: 1px dashed #ddd;
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .answer-section {
+            margin-top: 1rem;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .filename {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            display: none;
+        }
+        .path {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            word-break: break-all;
+            display: none;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+            font-size: 1rem;
+        }
+        .btn-primary { background-color: #3498db; color: white; }
+        .btn-primary:hover { background-color: #2980b9; }
+        .btn-success { background-color: #2ecc71; color: white; }
+        .btn-success:hover { background-color: #27ae60; }
+        .btn-success:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+        
+        .progress {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .loading {
+            display: none;
+            color: #666;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS & Google Cloud Icon Quiz</h1>
+        
+        <!-- Initialization Area -->
+        <div id="init-area" class="init-area">
+            <p class="description">
+                セキュリティ上の理由により、ブラウザはローカルファイルを自動的に検索できません。<br>
+                下のボタンを押して、アイコンが含まれているフォルダを選択してください。
+            </p>
+            <button class="btn-primary" onclick="selectFolder()">フォルダを選択して開始</button>
+            <div id="loading-msg" class="loading">ファイルを検索中...</div>
+        </div>
+
+        <!-- Quiz Area -->
+        <div id="quiz-container" class="quiz-area">
+            <div class="stats">
+                Total images found: <span id="total-count">0</span><br>
+                Quiz Questions: <span id="quiz-limit">10</span>
+            </div>
+
+            <div class="image-container">
+                <img id="quiz-image" src="" alt="Quiz Image">
+            </div>
+            
+            <div class="answer-section">
+                <div id="answer-filename" class="filename"></div>
+                <div id="answer-path" class="path"></div>
+                <div id="placeholder-text" style="color: #999;">???</div>
+            </div>
+
+            <div class="controls">
+                <button id="btn-show" class="btn-primary" onclick="showAnswer()">Show Answer</button>
+                <button id="btn-next" class="btn-success" onclick="nextQuestion()">Next</button>
+            </div>
+            
+            <div class="progress" id="progress-display"></div>
+        </div>
+        
+        <!-- Result Area -->
+        <div id="result-container" style="display: none; padding: 2rem;">
+            <h2>Quiz Completed!</h2>
+            <p>You have reviewed all selected images.</p>
+            <button class="btn-primary" onclick="location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const QUIZ_COUNT = 10;
+        const EXTENSIONS = ['.png', '.jpg', '.jpeg']; // SVG excluded
+
+        // State
+        let allImages = []; // Array of { name, pathString, fileHandle }
+        let quizQuestions = [];
+        let currentIndex = 0;
+
+        // UI Elements
+        const initArea = document.getElementById('init-area');
+        const loadingMsg = document.getElementById('loading-msg');
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+        const totalCountEl = document.getElementById('total-count');
+        const quizLimitEl = document.getElementById('quiz-limit');
+        
+        const imgEl = document.getElementById('quiz-image');
+        const filenameEl = document.getElementById('answer-filename');
+        const pathEl = document.getElementById('answer-path');
+        const placeholderEl = document.getElementById('placeholder-text');
+        const progressEl = document.getElementById('progress-display');
+        const btnShow = document.getElementById('btn-show');
+        const btnNext = document.getElementById('btn-next');
+
+        // Main Entry Point
+        async function selectFolder() {
+            try {
+                const dirHandle = await window.showDirectoryPicker();
+                loadingMsg.style.display = 'block';
+                
+                // Allow UI to update before heavy processing
+                setTimeout(async () => {
+                    allImages = [];
+                    await scanDirectory(dirHandle, dirHandle.name);
+                    
+                    if (allImages.length === 0) {
+                        alert('選択されたフォルダ内に画像ファイル(png, jpg, jpeg)が見つかりませんでした。');
+                        loadingMsg.style.display = 'none';
+                        return;
+                    }
+
+                    startQuiz();
+                }, 100);
+            } catch (err) {
+                console.error(err);
+                if (err.name !== 'AbortError') {
+                    alert('フォルダへのアクセスに失敗しました。');
+                }
+                loadingMsg.style.display = 'none';
+            }
+        }
+
+        async function scanDirectory(dirHandle, pathPrefix) {
+            for await (const entry of dirHandle.values()) {
+                const entryPath = `${pathPrefix}/${entry.name}`;
+                
+                if (entry.kind === 'file') {
+                    const name = entry.name.toLowerCase();
+                    if (EXTENSIONS.some(ext => name.endsWith(ext))) {
+                        allImages.push({
+                            name: entry.name,
+                            pathString: entryPath,
+                            handle: entry
+                        });
+                    }
+                } else if (entry.kind === 'directory') {
+                    // Recursively scan subdirectories
+                    await scanDirectory(entry, entryPath);
+                }
+            }
+        }
+
+        function startQuiz() {
+            // Shuffle and select
+            const count = Math.min(allImages.length, QUIZ_COUNT);
+            quizQuestions = shuffleArray(allImages).slice(0, count);
+
+            // Update UI
+            initArea.style.display = 'none';
+            quizContainer.style.display = 'flex';
+            totalCountEl.textContent = allImages.length;
+            quizLimitEl.textContent = count;
+
+            loadQuestion(0);
+        }
+
+        async function loadQuestion(index) {
+            if (index >= quizQuestions.length) {
+                showResults();
+                return;
+            }
+            
+            const q = quizQuestions[index];
+            
+            // Get File object to create blob URL
+            const file = await q.handle.getFile();
+            const blobUrl = URL.createObjectURL(file);
+            
+            // Clean up previous blob URL to prevent memory leaks
+            if (imgEl.src && imgEl.src.startsWith('blob:')) {
+                URL.revokeObjectURL(imgEl.src);
+            }
+
+            imgEl.src = blobUrl;
+            filenameEl.textContent = q.name;
+            pathEl.textContent = q.pathString;
+            
+            // Reset state
+            filenameEl.style.display = 'none';
+            pathEl.style.display = 'none';
+            placeholderEl.style.display = 'block';
+            btnShow.style.display = 'inline-block';
+            btnNext.style.display = 'inline-block';
+            
+            updateProgress();
+        }
+
+        function showAnswer() {
+            filenameEl.style.display = 'block';
+            pathEl.style.display = 'block';
+            placeholderEl.style.display = 'none';
+            btnShow.style.display = 'none';
+        }
+
+        function nextQuestion() {
+            currentIndex++;
+            loadQuestion(currentIndex);
+        }
+        
+        function updateProgress() {
+            progressEl.textContent = `Question ${currentIndex + 1} of ${quizQuestions.length}`;
+        }
+        
+        function showResults() {
+            quizContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+        }
+
+        // Fisher-Yates Shuffle
+        function shuffleArray(array) {
+            const newArr = [...array];
+            for (let i = newArr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+            }
+            return newArr;
+        }
+    </script>
+</body>
+</html>

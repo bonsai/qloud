@@ -1,0 +1,19 @@
+# Tools and Logs
+.agents/
+.gemini/
+.gemini-clipboard/
+.vscode/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp
+*.tmp
+*.bak

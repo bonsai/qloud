@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Quiz</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 { margin-bottom: 0.5rem; color: #333; }
+        .stats { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        
+        .quiz-area { display: flex; flex-direction: column; align-items: center; }
+        .image-container {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            width: 100%;
+            background-color: #fafafa;
+            border-radius: 8px;
+            border: 1px dashed #ddd;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .answer-section {
+            margin-top: 1rem;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .filename {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            display: none;
+        }
+        .path {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            word-break: break-all;
+            display: none;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+            font-size: 1rem;
+        }
+        .btn-show { background-color: #3498db; color: white; }
+        .btn-show:hover { background-color: #2980b9; }
+        .btn-next { background-color: #2ecc71; color: white; }
+        .btn-next:hover { background-color: #27ae60; }
+        .btn-next:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+        
+        .progress {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS & Google Cloud Icon Quiz</h1>
+        <div class="stats">
+            Total images in library: 2254<br>
+            Quiz Questions: 10
+        </div>
+
+        <div id="quiz-container" class="quiz-area">
+            <div class="image-container">
+                <img id="quiz-image" src="" alt="Quiz Image">
+            </div>
+            
+            <div class="answer-section">
+                <div id="answer-filename" class="filename"></div>
+                <div id="answer-path" class="path"></div>
+                <div id="placeholder-text" style="color: #999;">???</div>
+            </div>
+
+            <div class="controls">
+                <button id="btn-show" class="btn-show" onclick="showAnswer()">Show Answer</button>
+                <button id="btn-next" class="btn-next" onclick="nextQuestion()">Next</button>
+            </div>
+            
+            <div class="progress" id="progress-display"></div>
+        </div>
+        
+        <div id="result-container" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p>You have reviewed all 10 images.</p>
+            <button class="btn-show" onclick="location.reload()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        const questions = [{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Front-End-Web-Mobile/48/Arch_Amazon-Location-Service_48.png', name: 'Arch_Amazon-Location-Service_48.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/48/Arch_Amazon-MQ_48.png', name: 'Arch_Amazon-MQ_48.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/16/Arch_AWS-Parallel-Computing-Service_16.png', name: 'Arch_AWS-Parallel-Computing-Service_16.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/32/Arch_AWS-Firewall-Manager_32.png', name: 'Arch_AWS-Firewall-Manager_32.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_General-Icons/Res_48_Light/Res_Tape-storage_48_Light.png', name: 'Res_Tape-storage_48_Light.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/32/Arch_AWS-Database-Migration-Service_32.png', name: 'Arch_AWS-Database-Migration-Service_32.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_General-Icons/Res_48_Dark/Res_Database_48_Dark.png', name: 'Res_Database_48_Dark.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Games/32/Arch_Open-3D-Engine_32.png', name: 'Arch_Open-3D-Engine_32.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_Amazon-EC2-Auto-Scaling_48.png', name: 'Arch_Amazon-EC2-Auto-Scaling_48.png' },{ path: 'img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Business-Applications/64/Arch_Alexa-For-Business_64.png', name: 'Arch_Alexa-For-Business_64.png' }];
+        let currentIndex = 0;
+        let isAnswerShown = false;
+
+        const imgEl = document.getElementById('quiz-image');
+        const filenameEl = document.getElementById('answer-filename');
+        const pathEl = document.getElementById('answer-path');
+        const placeholderEl = document.getElementById('placeholder-text');
+        const progressEl = document.getElementById('progress-display');
+        const btnShow = document.getElementById('btn-show');
+        const btnNext = document.getElementById('btn-next');
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+
+        function loadQuestion(index) {
+            if (index >= questions.length) {
+                showResults();
+                return;
+            }
+            
+            const q = questions[index];
+            imgEl.src = q.path;
+            filenameEl.textContent = q.name;
+            pathEl.textContent = decodeURIComponent(q.path);
+            
+            // Reset state
+            isAnswerShown = false;
+            filenameEl.style.display = 'none';
+            pathEl.style.display = 'none';
+            placeholderEl.style.display = 'block';
+            btnShow.style.display = 'inline-block';
+            btnNext.style.display = 'inline-block';
+            btnNext.disabled = false;
+            
+            updateProgress();
+        }
+
+        function showAnswer() {
+            filenameEl.style.display = 'block';
+            pathEl.style.display = 'block';
+            placeholderEl.style.display = 'none';
+            btnShow.style.display = 'none';
+            isAnswerShown = true;
+        }
+
+        function nextQuestion() {
+            currentIndex++;
+            loadQuestion(currentIndex);
+        }
+        
+        function updateProgress() {
+            progressEl.textContent = "Question " + (currentIndex + 1) + " of " + questions.length;
+        }
+        
+        function showResults() {
+            quizContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+        }
+
+        // Initialize
+        loadQuestion(0);
+    </script>
+</body>
+</html>

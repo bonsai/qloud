@@ -1,0 +1,72 @@
+[
+  {
+    "service": "Compute Engine",
+    "genre": "Compute",
+    "free_tier": "1 f1-micro VM instance per month (Always Free)",
+    "description_en": "Virtual machines running on Google's infrastructure.",
+    "description_ja": "Googleのインフラ上で動作する仮想マシン。"
+  },
+  {
+    "service": "Cloud Functions",
+    "genre": "Serverless",
+    "free_tier": "2 million invocations per month (Always Free)",
+    "description_en": "Event-driven serverless compute platform.",
+    "description_ja": "イベント駆動型のサーバーレスコンピューティングプラットフォーム。"
+  },
+  {
+    "service": "Cloud Storage",
+    "genre": "Storage",
+    "free_tier": "5 GB-month of Standard Storage (Always Free)",
+    "description_en": "Object storage for various data types.",
+    "description_ja": "様々なデータタイプに対応するオブジェクトストレージ。"
+  },
+  {
+    "service": "BigQuery",
+    "genre": "Analytics",
+    "free_tier": "1 TB of query processing per month & 10 GB of storage per month (Always Free)",
+    "description_en": "Serverless, highly scalable, and cost-effective cloud data warehouse.",
+    "description_ja": "サーバーレスで拡張性が高く、費用対効果の高いクラウドデータウェアハウス。"
+  },
+  {
+    "service": "Cloud SQL",
+    "genre": "Database",
+    "free_tier": "No Always Free tier, free trial available (Free Trial)",
+    "description_en": "Managed relational database service.",
+    "description_ja": "マネージドなリレーショナルデータベースサービス。"
+  },
+  {
+    "service": "App Engine",
+    "genre": "Compute",
+    "free_tier": "28 F instances per day, 9 hours of B instance per day (Always Free)",
+    "description_en": "Platform as a Service (PaaS) for building scalable web applications and mobile backends.",
+    "description_ja": "スケーラブルなウェブアプリケーションとモバイルバックエンドを構築するためのPaaS。"
+  },
+  {
+    "service": "Cloud Pub/Sub",
+    "genre": "Messaging",
+    "free_tier": "10 GB of messages per month (Always Free)",
+    "description_en": "Asynchronous messaging service for scalable and reliable message delivery.",
+    "description_ja": "スケーラブルで信頼性の高いメッセージ配信のための非同期メッセージングサービス。"
+  },
+  {
+    "service": "Kubernetes Engine (GKE)",
+    "genre": "Compute",
+    "free_tier": "One Autopilot or Standard mode cluster per billing account (Always Free)",
+    "description_en": "Managed environment for deploying, managing, and scaling containerized applications.",
+    "description_ja": "コンテナ化されたアプリケーションをデプロイ、管理、スケーリングするためのマネージド環境。"
+  },
+  {
+    "service": "VPC Network",
+    "genre": "Networking",
+    "free_tier": "No additional charge for basic usage (Always Free)",
+    "description_en": "Global virtual network for Google Cloud resources.",
+    "description_ja": "Google Cloudリソースのためのグローバル仮想ネットワーク。"
+  },
+  {
+    "service": "Cloud Logging",
+    "genre": "Monitoring",
+    "free_tier": "50 GB of logs ingested per month (Always Free)",
+    "description_en": "Real-time log management and analysis.",
+    "description_ja": "リアルタイムのログ管理と分析。"
+  }
+]

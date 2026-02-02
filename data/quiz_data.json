@@ -1,0 +1,1343 @@
+[
+  {
+    "id": "aws-ec2",
+    "name": "EC2",
+    "category": "Compute",
+    "description": {
+      "en": "Scalable virtual machines in the cloud for general computing.",
+      "ja": "汎用計算用にクラウドで拡張可能な仮想マシンを提供。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-EC2_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-EC2_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-EC2_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-EC2_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/32/Arch_Amazon-EC2_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/32/Arch_Amazon-EC2_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_Amazon-EC2_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_Amazon-EC2_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_AMI_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_AMI_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Auto-Scaling_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Auto-Scaling_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_AWS-Microservice-Extractor-for-.NET_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_AWS-Microservice-Extractor-for-.NET_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_DB-Instance_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_DB-Instance_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Elastic-IP-Address_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Elastic-IP-Address_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instance_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instance_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instance-with-CloudWatch_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instance-with-CloudWatch_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instances_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instances_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Rescue_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Rescue_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Spot-Instance_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Spot-Instance_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-lambda",
+    "name": "Lambda",
+    "category": "Compute",
+    "description": {
+      "en": "Serverless compute service that runs your code in response to events.",
+      "ja": "イベントに応じてコードを実行するサーバーレスコンピューティング。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_AWS-Lambda_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_AWS-Lambda_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/32/Arch_AWS-Lambda_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/32/Arch_AWS-Lambda_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_AWS-Lambda_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_AWS-Lambda_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_AWS-Lambda_Lambda-Function_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_AWS-Lambda_Lambda-Function_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Storage/Res_Amazon-Simple-Storage-Service_S3-Object-Lambda_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Storage/Res_Amazon-Simple-Storage-Service_S3-Object-Lambda_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-s3",
+    "name": "S3",
+    "category": "Storage",
+    "description": {
+      "en": "Object storage for any kind of file accessible via web or API.",
+      "ja": "あらゆるファイルを保存できるオブジェクトストレージ。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Storage/Res_AWS-Backup_AWS-Backup-support-for-Amazon-S3_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Storage/Res_AWS-Backup_AWS-Backup-support-for-Amazon-S3_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-dynamodb",
+    "name": "DynamoDB",
+    "category": "Database",
+    "description": {
+      "en": "Fully managed NoSQL database delivering single‑digit millisecond latency.",
+      "ja": "ミリ秒単位を実現するフルマネージドNoSQLデータベース。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-DynamoDB_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-DynamoDB_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-DynamoDB_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-DynamoDB_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/32/Arch_Amazon-DynamoDB_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/32/Arch_Amazon-DynamoDB_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/48/Arch_Amazon-DynamoDB_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/48/Arch_Amazon-DynamoDB_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Amazon-DynamoDB-Accelerator_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Amazon-DynamoDB-Accelerator_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Attribute_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Attribute_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Attributes_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Attributes_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Global-secondary-index_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Global-secondary-index_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Item_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Item_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Items_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Items_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Standard-Access-Table-Class_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Standard-Access-Table-Class_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Standard-Infrequent-Access-Table-Class_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Standard-Infrequent-Access-Table-Class_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Stream_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Stream_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Table_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-DynamoDB_Table_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-cloudfront",
+    "name": "CloudFront",
+    "category": "Networking & Content Delivery",
+    "description": {
+      "en": "Global content delivery network for static & dynamic content.",
+      "ja": "静的・動的コンテンツを世界中に配信するCDNサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/64/Arch_Amazon-CloudFront_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/64/Arch_Amazon-CloudFront_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/64/Arch_Amazon-CloudFront_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/64/Arch_Amazon-CloudFront_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/32/Arch_Amazon-CloudFront_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/32/Arch_Amazon-CloudFront_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/48/Arch_Amazon-CloudFront_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Networking-Content-Delivery/48/Arch_Amazon-CloudFront_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Download-Distribution_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Download-Distribution_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Edge-Location_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Edge-Location_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Functions_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Functions_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Streaming-Distribution_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-CloudFront_Streaming-Distribution_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-rds",
+    "name": "RDS",
+    "category": "Database",
+    "description": {
+      "en": "Managed relational database service supporting multiple engines.",
+      "ja": "MySQL/PostgreSQLなど複数エンジン対応のマネージド関係データベース。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-RDS_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-RDS_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-RDS_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/64/Arch_Amazon-RDS_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/32/Arch_Amazon-RDS_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/32/Arch_Amazon-RDS_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/48/Arch_Amazon-RDS_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Database/48/Arch_Amazon-RDS_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Blue-Green-Deployments_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Blue-Green-Deployments_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Multi-AZ_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Multi-AZ_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Multi-AZ-DB-Cluster_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Multi-AZ-DB-Cluster_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Optimized-Writes_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Optimized-Writes_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Trusted-Language-Extensions-for-PostgreSQL_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Database/Res_Amazon-RDS_Trusted-Language-Extensions-for-PostgreSQL_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-lightsail",
+    "name": "Lightsail",
+    "category": "Compute",
+    "description": {
+      "en": "Easy‑to‑use VPS with simple pricing.",
+      "ja": "シンプル価格の使いやすいVPSサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-Lightsail_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-Lightsail_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-Lightsail_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/64/Arch_Amazon-Lightsail_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/32/Arch_Amazon-Lightsail_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/32/Arch_Amazon-Lightsail_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_Amazon-Lightsail_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Compute/48/Arch_Amazon-Lightsail_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-codebuild",
+    "name": "CodeBuild",
+    "category": "Developer Tools",
+    "description": {
+      "en": "Fully managed build service in the cloud.",
+      "ja": "クラウド上の完全マネージドなビルドサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeBuild_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeBuild_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeBuild_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeBuild_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-CodeBuild_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-CodeBuild_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-CodeBuild_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-CodeBuild_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-codecommit",
+    "name": "CodeCommit",
+    "category": "Developer Tools",
+    "description": {
+      "en": "Source control service hosting Git repositories.",
+      "ja": "Git リポジトリをホストできるソース管理サービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeCommit_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeCommit_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeCommit_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodeCommit_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-CodeCommit_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-CodeCommit_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-CodeCommit_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-CodeCommit_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-codepipeline",
+    "name": "CodePipeline",
+    "category": "Developer Tools",
+    "description": {
+      "en": "Continuous delivery service for automating pipelines.",
+      "ja": "CI/CD パイプラインを自動化する継続的デリバリサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodePipeline_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodePipeline_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodePipeline_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-CodePipeline_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-CodePipeline_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-CodePipeline_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-CodePipeline_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-CodePipeline_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-cloudwatch",
+    "name": "CloudWatch",
+    "category": "Monitoring",
+    "description": {
+      "en": "Monitoring and observability for AWS resources.",
+      "ja": "AWSリソースの監視と可観測性を実現。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/32/Arch_Amazon-CloudWatch_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/32/Arch_Amazon-CloudWatch_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/48/Arch_Amazon-CloudWatch_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Management-Governance/48/Arch_Amazon-CloudWatch_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instance-with-CloudWatch_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Compute/Res_Amazon-EC2_Instance-with-CloudWatch_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Alarm_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Alarm_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Cross-account-Observability_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Cross-account-Observability_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Data-Protection_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Data-Protection_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Event-Event-Based_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Event-Event-Based_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Event-Time-Based_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Event-Time-Based_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Evidently_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Evidently_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Logs_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Logs_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Metrics-Insights_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Metrics-Insights_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Rule_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Rule_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_RUM_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_RUM_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Synthetics_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Management-Governance/Res_Amazon-CloudWatch_Synthetics_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-glue",
+    "name": "Glue",
+    "category": "Analytics",
+    "description": {
+      "en": "ETL service for data catalog and transformation.",
+      "ja": "データカタログと変換用のETLサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_AWS-Glue_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_AWS-Glue_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_AWS-Glue_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_AWS-Glue_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_AWS-Glue_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_AWS-Glue_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_AWS-Glue_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_AWS-Glue_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_AWS-Glue-for-Ray_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_AWS-Glue-for-Ray_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_Crawler_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_Crawler_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_Data-Catalog_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_Data-Catalog_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_Data-Quality_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_AWS-Glue_Data-Quality_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-athena",
+    "name": "Athena",
+    "category": "Analytics",
+    "description": {
+      "en": "Query data in S3 using SQL without servers.",
+      "ja": "サーバレスでS3上のデータをSQLでクエリできる。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Athena_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Athena_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Athena_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Athena_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_Amazon-Athena_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_Amazon-Athena_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_Amazon-Athena_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_Amazon-Athena_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Athena_Data-Source-Connectors_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Athena_Data-Source-Connectors_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-redshift",
+    "name": "Redshift",
+    "category": "Analytics",
+    "description": {
+      "en": "Fully managed data warehouse service.",
+      "ja": "フルマネージドのデータウェアハウスサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Redshift_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Redshift_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Redshift_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-Redshift_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_Amazon-Redshift_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_Amazon-Redshift_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_Amazon-Redshift_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_Amazon-Redshift_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Auto-copy_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Auto-copy_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Data-Sharing-Governance_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Data-Sharing-Governance_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Dense-Compute-Node_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Dense-Compute-Node_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Dense-Storage-Node_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Dense-Storage-Node_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_ML_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_ML_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Query-Editor-v2.0_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Query-Editor-v2.0_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_RA3_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_RA3_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Streaming-Ingestion_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Analytics/Res_Amazon-Redshift_Streaming-Ingestion_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-sagemaker",
+    "name": "SageMaker",
+    "category": "Machine Learning",
+    "description": {
+      "en": "Build, train and deploy ML models at scale.",
+      "ja": "機械学習モデルの構築・学習・デプロイをスケールして実行。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-SageMaker_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-SageMaker_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-SageMaker_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/64/Arch_Amazon-SageMaker_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_Amazon-SageMaker_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/32/Arch_Amazon-SageMaker_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_Amazon-SageMaker_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Analytics/48/Arch_Amazon-SageMaker_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-comprehend",
+    "name": "Comprehend",
+    "category": "Machine Learning",
+    "description": {
+      "en": "Natural language processing service.",
+      "ja": "自然言語処理サービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Comprehend_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Comprehend_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Comprehend_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Comprehend_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/32/Arch_Amazon-Comprehend_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/32/Arch_Amazon-Comprehend_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/48/Arch_Amazon-Comprehend_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/48/Arch_Amazon-Comprehend_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-rekognition",
+    "name": "Rekognition",
+    "category": "Machine Learning",
+    "description": {
+      "en": "Image and video analysis service.",
+      "ja": "画像・動画を分析するサービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Rekognition_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Rekognition_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Rekognition_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/64/Arch_Amazon-Rekognition_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/32/Arch_Amazon-Rekognition_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/32/Arch_Amazon-Rekognition_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/48/Arch_Amazon-Rekognition_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Artificial-Intelligence/48/Arch_Amazon-Rekognition_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Artificial-Intelligence/Res_Amazon-Rekognition_Image_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Artificial-Intelligence/Res_Amazon-Rekognition_Image_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Artificial-Intelligence/Res_Amazon-Rekognition_Video_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Artificial-Intelligence/Res_Amazon-Rekognition_Video_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-vpc",
+    "name": "VPC",
+    "category": "Networking",
+    "description": {
+      "en": "Isolated cloud resources logically networked.",
+      "ja": "論理的に分離されたクラウドリソースをネットワーク化。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Group-Icons_07312025/Virtual-private-cloud-VPC_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Group-Icons_07312025/Virtual-private-cloud-VPC_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Carrier-Gateway_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Carrier-Gateway_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Customer-Gateway_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Customer-Gateway_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Elastic-Network-Adapter_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Elastic-Network-Adapter_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Elastic-Network-Interface_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Elastic-Network-Interface_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Endpoints_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Endpoints_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Flow-Logs_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Flow-Logs_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Internet-Gateway_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Internet-Gateway_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_NAT-Gateway_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_NAT-Gateway_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Network-Access-Analyzer_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Network-Access-Analyzer_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Network-Access-Control-List_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Network-Access-Control-List_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Peering-Connection_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Peering-Connection_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Reachability-Analyzer_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Reachability-Analyzer_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Router_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Router_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Traffic-Mirroring_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Traffic-Mirroring_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Virtual-private-cloud-VPC_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_Virtual-private-cloud-VPC_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_VPN-Connection_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_VPN-Connection_48.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_VPN-Gateway_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Resource-Icons_07312025/Res_Networking-Content-Delivery/Res_Amazon-VPC_VPN-Gateway_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-efs",
+    "name": "EFS",
+    "category": "Storage",
+    "description": {
+      "en": "File storage attached to EC2.",
+      "ja": "EC2にアタッチして使うファイルストレージ。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/64/Arch_Amazon-EFS_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/64/Arch_Amazon-EFS_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/64/Arch_Amazon-EFS_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/64/Arch_Amazon-EFS_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/32/Arch_Amazon-EFS_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/32/Arch_Amazon-EFS_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/48/Arch_Amazon-EFS_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Storage/48/Arch_Amazon-EFS_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-x-ray",
+    "name": "X-Ray",
+    "category": "DevOps",
+    "description": {
+      "en": "Debug and trace requests in distributed apps.",
+      "ja": "分散アプリケーションのトレースとデバッグ。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-X-Ray_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-X-Ray_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-X-Ray_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/64/Arch_AWS-X-Ray_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-X-Ray_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/32/Arch_AWS-X-Ray_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-X-Ray_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Developer-Tools/48/Arch_AWS-X-Ray_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-macie",
+    "name": "Macie",
+    "category": "Security",
+    "description": {
+      "en": "Detect and classify sensitive data.",
+      "ja": "機密データ検出・分類サービス。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/64/Arch_Amazon-Macie_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/64/Arch_Amazon-Macie_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/64/Arch_Amazon-Macie_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/64/Arch_Amazon-Macie_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/32/Arch_Amazon-Macie_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/32/Arch_Amazon-Macie_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/48/Arch_Amazon-Macie_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_Security-Identity-Compliance/48/Arch_Amazon-Macie_48.png"
+      }
+    ]
+  },
+  {
+    "id": "aws-appsync",
+    "name": "AppSync",
+    "category": "Integration",
+    "description": {
+      "en": "Managed GraphQL API service.",
+      "ja": "GraphQL APIをマネージドで提供。"
+    },
+    "images": [
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/64/Arch_AWS-AppSync_64@5x.png",
+        "score": 170,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/64/Arch_AWS-AppSync_64@5x.png"
+      },
+      {
+        "type": "icon",
+        "size": "64",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/64/Arch_AWS-AppSync_64.png",
+        "score": 120,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/64/Arch_AWS-AppSync_64.png"
+      },
+      {
+        "type": "icon",
+        "size": "32",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/32/Arch_AWS-AppSync_32.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/32/Arch_AWS-AppSync_32.png"
+      },
+      {
+        "type": "icon",
+        "size": "48",
+        "path": "../img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/48/Arch_AWS-AppSync_48.png",
+        "score": 100,
+        "original_path": "img/Asset-Package_07312025.49d3aab7f9e6131e51ade8f7c6c8b961ee7d3bb1/Architecture-Service-Icons_07312025/Arch_App-Integration/48/Arch_AWS-AppSync_48.png"
+      }
+    ]
+  }
+]

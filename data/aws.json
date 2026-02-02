@@ -1,0 +1,214 @@
+
+[
+  {
+    "service": "EC2",
+    "genre": "Compute",
+    "free_tier": "750 hours/month of t2.micro (12 months)",
+    "description_en": "Scalable virtual machines in the cloud for general computing.",
+    "description_ja": "汎用計算用にクラウドで拡張可能な仮想マシンを提供。"
+  },
+  {
+    "service": "Lambda",
+    "genre": "Compute",
+    "free_tier": "1 million requests & 3.2M compute‑seconds/month (Always Free)",
+    "description_en": "Serverless compute service that runs your code in response to events.",
+    "description_ja": "イベントに応じてコードを実行するサーバーレスコンピューティング。"
+  },
+  {
+    "service": "S3",
+    "genre": "Storage",
+    "free_tier": "5 GB storage, 20k GET, 2k PUT requests/month (12 months)",
+    "description_en": "Object storage for any kind of file accessible via web or API.",
+    "description_ja": "あらゆるファイルを保存できるオブジェクトストレージ。"
+  },
+  {
+    "service": "DynamoDB",
+    "genre": "Database",
+    "free_tier": "25 GB storage & up to 200M requests/month (Always Free)",
+    "description_en": "Fully managed NoSQL database delivering single‑digit millisecond latency.",
+    "description_ja": "ミリ秒単位を実現するフルマネージドNoSQLデータベース。"
+  },
+  {
+    "service": "CloudFront",
+    "genre": "Networking & Content Delivery",
+    "free_tier": "1 TB data transfer out & 10M HTTP(S) requests/month (Always Free)",
+    "description_en": "Global content delivery network for static & dynamic content.",
+    "description_ja": "静的・動的コンテンツを世界中に配信するCDNサービス。"
+  },
+  {
+    "service": "RDS",
+    "genre": "Database",
+    "free_tier": "750 hours/month of db.t2.micro + 20 GB storage (12 months)",
+    "description_en": "Managed relational database service supporting multiple engines.",
+    "description_ja": "MySQL/PostgreSQLなど複数エンジン対応のマネージド関係データベース。"
+  },
+  {
+    "service": "SNS",
+    "genre": "Messaging",
+    "free_tier": "1 million publishes & 100k HTTP notifications/month (Always Free)",
+    "description_en": "Simple notification service for message delivery via push, SMS, email.",
+    "description_ja": "プッシュ通知、SMS、メールの配信を行う通知サービス。"
+  },
+  {
+    "service": "SQS",
+    "genre": "Messaging",
+    "free_tier": "1 million requests/month (Always Free)",
+    "description_en": "Fully managed message queuing service.",
+    "description_ja": "メッセージキューを提供するフルマネージドサービス。"
+  },
+  {
+    "service": "Lightsail",
+    "genre": "Compute",
+    "free_tier": "750 hours/month for 3 months (Free Trial)",
+    "description_en": "Easy‑to‑use VPS with simple pricing.",
+    "description_ja": "シンプル価格の使いやすいVPSサービス。"
+  },
+  {
+    "service": "CodeBuild",
+    "genre": "Developer Tools",
+    "free_tier": "100 build‑minutes/month (Always Free)",
+    "description_en": "Fully managed build service in the cloud.",
+    "description_ja": "クラウド上の完全マネージドなビルドサービス。"
+  },
+  {
+    "service": "CodeCommit",
+    "genre": "Developer Tools",
+    "free_tier": "5 active users/month (Always Free)",
+    "description_en": "Source control service hosting Git repositories.",
+    "description_ja": "Git リポジトリをホストできるソース管理サービス。"
+  },
+  {
+    "service": "CodePipeline",
+    "genre": "Developer Tools",
+    "free_tier": "1 active pipeline/month (Always Free)",
+    "description_en": "Continuous delivery service for automating pipelines.",
+    "description_ja": "CI/CD パイプラインを自動化する継続的デリバリサービス。"
+  },
+  {
+    "service": "CloudWatch",
+    "genre": "Monitoring",
+    "free_tier": "10 custom metrics & alarms, 1M API requests/month (Always Free)",
+    "description_en": "Monitoring and observability for AWS resources.",
+    "description_ja": "AWSリソースの監視と可観測性を実現。"
+  },
+  {
+    "service": "IAM",
+    "genre": "Security & Compliance",
+    "free_tier": "No additional charge (Always Free)",
+    "description_en": "Manage users and permissions securely.",
+    "description_ja": "ユーザーと権限を安全に管理。"
+  },
+  {
+    "service": "KMS",
+    "genre": "Security & Compliance",
+    "free_tier": "20,000 requests/month (Always Free)",
+    "description_en": "Managed key management service for encryption.",
+    "description_ja": "暗号化用のマネージド鍵管理サービス。"
+  },
+  {
+    "service": "DMS",
+    "genre": "Migration & Transfer",
+    "free_tier": "750 hours/month of dms.t2.micro (Always Free)",
+    "description_en": "Database migration service to move data easily.",
+    "description_ja": "データベース移行を簡単に行えるサービス。"
+  },
+  {
+    "service": "Step Functions",
+    "genre": "Serverless",
+    "free_tier": "4,000 state transitions/month (Always Free)",
+    "description_en": "Coordinate serverless components into workflows.",
+    "description_ja": "サーバーレスコンポーネントをワークフロー化する。"
+  },
+  {
+    "service": "Glue",
+    "genre": "Analytics",
+    "free_tier": "1 million objects catalog items (Always Free)",
+    "description_en": "ETL service for data catalog and transformation.",
+    "description_ja": "データカタログと変換用のETLサービス。"
+  },
+  {
+    "service": "Athena",
+    "genre": "Analytics",
+    "free_tier": "750 query hrs/month (12 months trial)",
+    "description_en": "Query data in S3 using SQL without servers.",
+    "description_ja": "サーバレスでS3上のデータをSQLでクエリできる。"
+  },
+  {
+    "service": "Redshift",
+    "genre": "Analytics",
+    "free_tier": "750 hours/month (2‑month free trial)",
+    "description_en": "Fully managed data warehouse service.",
+    "description_ja": "フルマネージドのデータウェアハウスサービス。"
+  },
+  {
+    "service": "SageMaker",
+    "genre": "Machine Learning",
+    "free_tier": "250 hours/month of t2.micro notebook (2 months)",
+    "description_en": "Build, train and deploy ML models at scale.",
+    "description_ja": "機械学習モデルの構築・学習・デプロイをスケールして実行。"
+  },
+  {
+    "service": "Comprehend",
+    "genre": "Machine Learning",
+    "free_tier": "50K units text/month (12 months)",
+    "description_en": "Natural language processing service.",
+    "description_ja": "自然言語処理サービス。"
+  },
+  {
+    "service": "Rekognition",
+    "genre": "Machine Learning",
+    "free_tier": "5,000 images/month (12 months)",
+    "description_en": "Image and video analysis service.",
+    "description_ja": "画像・動画を分析するサービス。"
+  },
+  {
+    "service": "VPC",
+    "genre": "Networking",
+    "free_tier": "No additional charge (Always Free)",
+    "description_en": "Isolated cloud resources logically networked.",
+    "description_ja": "論理的に分離されたクラウドリソースをネットワーク化。"
+  },
+  {
+    "service": "EFS",
+    "genre": "Storage",
+    "free_tier": "5 GB storage (12 months)",
+    "description_en": "File storage attached to EC2.",
+    "description_ja": "EC2にアタッチして使うファイルストレージ。"
+  },
+  {
+    "service": "X-Ray",
+    "genre": "DevOps",
+    "free_tier": "100,000 traces/month (Always Free)",
+    "description_en": "Debug and trace requests in distributed apps.",
+    "description_ja": "分散アプリケーションのトレースとデバッグ。"
+  },
+  {
+    "service": "Macie",
+    "genre": "Security",
+    "free_tier": "1 GB classification/month (Always Free)",
+    "description_en": "Detect and classify sensitive data.",
+    "description_ja": "機密データ検出・分類サービス。"
+  },
+  {
+    "service": "AppSync",
+    "genre": "Integration",
+    "free_tier": "250,000 query/update operations/month (12 months)",
+    "description_en": "Managed GraphQL API service.",
+    "description_ja": "GraphQL APIをマネージドで提供。"
+  },
+  {
+    "service": "AppStream 2.0",
+    "genre": "End User Computing",
+    "free_tier": "40 hours streaming (Free Trial)",
+    "description_en": "Stream desktop apps without infrastructure.",
+    "description_ja": "インフラ不要でデスクトップアプリ配信。"
+  },
+  {
+    "service": "SES",
+    "genre": "Customer Engagement",
+    "free_tier": "62,000 outbound messages/month (Always Free)",
+    "description_en": "Email sending service integrated with AWS.",
+    "description_ja": "AWSと統合されたメール送信サービス。"
+  }
+]
+
