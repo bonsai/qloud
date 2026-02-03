@@ -13,7 +13,7 @@ function sendResponse($data) {
 }
 
 // Path to ranking data
-$jsonFile = __DIR__ . '/ranking.json';
+$jsonFile = __DIR__ . '/../quiz/ranking.json';
 
 // Initialize default ranking if file doesn't exist
 $ranking = [];
