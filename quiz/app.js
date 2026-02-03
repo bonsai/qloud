@@ -183,8 +183,8 @@ function submitScore() {
     // Use relative path for PHP API
     // If running via Vercel rewrite: /rank/api
     // If running local PHP server at /quiz: ./rank/ranking.php
-    // Let's try direct path relative to html
-    const apiUrl = './rank/ranking.php';
+    // Refactored to standard /api/ranking.php
+    const apiUrl = '/api/ranking.php';
 
     fetch(apiUrl, {
         method: 'POST',
