@@ -1,6 +1,6 @@
 {
   "functions": {
-    "quiz/**/*.php": {
+    "api/**/*.php": {
       "runtime": "vercel-php@0.7.1"
     }
   },
@@ -8,10 +8,6 @@
     {
       "source": "/",
       "destination": "/quiz/quiz2.html"
-    },
-    {
-      "source": "/rank/api",
-      "destination": "/quiz/rank/ranking.php"
     }
   ],
   "headers": [
