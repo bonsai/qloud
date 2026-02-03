@@ -3,7 +3,7 @@ const ASSETS = [
   './quiz2.html',
   './style.css',
   './app.js',
-  '../data/quiz_data.json',
+  './quiz_data.json',
   './manifest.json',
   './icon.png',
   'https://unpkg.com/htmx.org@1.9.10'

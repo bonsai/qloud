@@ -153,9 +153,18 @@ def main():
     print(f"Saved image tree to {img_tree_output} (legacy support)")
     
     new_data = []
+    seen_ids = set()
     
     for svc in services:
         name = svc.get('service')
+        
+        # Create ID first to check for duplicates
+        item_id = f"aws-{name.lower().replace(' ', '-')}"
+        
+        if item_id in seen_ids:
+            print(f"Skipping duplicate service: {name} (ID: {item_id})")
+            continue
+            
         print(f"Processing {name}...")
         
         found_images = find_images(name, images)
@@ -172,7 +181,7 @@ def main():
                     seen_paths.add(img['path'])
         
         item = {
-            "id": f"aws-{name.lower().replace(' ', '-')}",
+            "id": item_id,
             "name": name,
             "category": svc.get('genre'),
             "description": {
@@ -185,6 +194,7 @@ def main():
             }
         }
         new_data.append(item)
+        seen_ids.add(item_id)
         
     print(f"Saving to {output_path}...")
     with open(output_path, 'w', encoding='utf-8') as f:

@@ -15,7 +15,7 @@ let score = 0;
 let currentMode = 'text_to_image'; // or 'image_to_text'
 
 // Load Data
-fetch('../data/quiz_data.json')
+fetch('./quiz_data.json')
     .then(res => res.json())
     .then(data => {
         quizData = data.filter(item => item.images && item.images.length > 0);

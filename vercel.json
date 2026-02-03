@@ -8,10 +8,6 @@
     {
       "source": "/",
       "destination": "/quiz/quiz2.html"
-    },
-    {
-      "source": "/rank/api",
-      "destination": "/quiz/rank/ranking.php"
     }
   ],
   "headers": [
