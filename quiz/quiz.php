@@ -192,6 +192,8 @@ $jsDataString = json_encode($selectedImages);
     </style>
     <!-- QRコード生成ライブラリ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/quiz/style.css">
+    <script src="/quiz/app.js"></script>
 </head>
 <body>
     <div class="container">

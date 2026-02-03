@@ -1,0 +1,50 @@
+画像のコンソールログを見ると、Vercel上でのデプロイにおいて**「ファイルが見つからない（404）」ことと、それに付随して「MIMEタイプの不一致」**が発生しているのが主な原因です。
+
+Vercel（通常は静的ホスティングやNext.js向け）でPHPを動かそうとしている、あるいはPHPから書き出した静的ファイルが参照できていない状況と推測します。
+
+デバッグの精度を上げるための指示プロンプトを作成しました。これをChatGPTやClaudeなどのAIに投げると、解決策がスムーズに得られます。
+
+📋 PHPデバッグ用プロンプト
+以下の内容をコピーして、AIに貼り付けてください。
+
+タイトル：Vercelデプロイ時の404エラーおよびMIMEタイプエラーの解決
+
+【現状の課題】
+VercelにデプロイしたPHPプロジェクト（Cloud Quiz PWA）が正しく動作しません。
+ブラウザのコンソールで以下のエラーが大量に出ています。
+
+app.js, style.css, manifest.json, favicon.ico がすべて 404 (Not Found)。
+
+CSSやJSが text/plain として読み込まれ、MIMEタイプエラーでブロックされている。
+
+Uncaught ReferenceError: startQuiz is not defined（JSが読み込めていないため）。
+
+【プロジェクト構成の補足】
+
+ホスティング先: Vercel
+
+言語: PHP / HTML / JavaScript
+
+ファイル構造（例）: index.php, js/app.js, css/style.css など
+
+【依頼事項】
+
+VercelでPHPを動かすための vercel.json の正しい設定例を教えてください。
+
+静的ファイル（CSS/JS）が404になる原因として考えられるパスの指定ミスや、Vercel特有のルーティング設定について解説してください。
+
+.htaccess を使っている場合、Vercelで代わりに行うべき設定を教えてください。
+
+【添付画像（コンソールログ）】
+※（ここにこの画像を再度添付するか、ログの内容をテキストで添えてください）
+
+💡 自分でチェックすべきポイント（迅速な解決のために）
+AIに聞く前に、以下の点を確認すると解決が早いかもしれません。
+
+大文字小文字の区別: ローカル（Windowsなど）では Style.css と style.css を区別しませんが、Vercel（Linuxベース）では厳格に区別されます。
+
+ディレクトリ構造: index.php と同じ階層に app.js がありますか？ もし js/app.js にあるなら、HTML内の記述を <script src="js/app.js"> に修正する必要があります。
+
+vercel.json の有無: Vercelは標準でPHPをサポートしていないため、vercel-php などのランタイム（Community Runtime）を vercel.json で指定しているか確認してください。
+
+次に、あなたのプロジェクトのディレクトリ構成（ファイルの一覧）を教えていただけますか？それがあれば、より具体的な vercel.json の書き方を提案できます。
