@@ -1,7 +1,7 @@
 {
   "functions": {
-    "quiz/rank/*.php": {
-      "runtime": "vercel-php@0.6.0"
+    "quiz/**/*.php": {
+      "runtime": "vercel-php@0.7.1"
     }
   },
   "rewrites": [
