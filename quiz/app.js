@@ -149,12 +149,6 @@ function handleAnswer(selectedId, btnElement) {
         score++;
     } else {
         btnElement.classList.add('wrong');
-        // Highlight correct one
-        // We need to find which button has the correct ID. 
-        // But wait, the ID is inside the onclick handler string. 
-        // Simpler: re-loop or store ID in data-attribute.
-        // Let's add data-id to buttons in render next time. 
-        // For now, let's just proceed.
     }
 
     setTimeout(() => {
@@ -180,10 +174,6 @@ function submitScore() {
     nameInput.disabled = true;
     document.querySelector('#submit-score-area button').disabled = true;
 
-    // Use relative path for PHP API
-    // If running via Vercel rewrite: /rank/api
-    // If running local PHP server at /quiz: ./rank/ranking.php
-    // Refactored to standard /api/ranking.php
     const apiUrl = '/api/ranking.php';
 
     fetch(apiUrl, {
@@ -204,7 +194,6 @@ function submitScore() {
     })
     .catch(err => {
         console.error('Error submitting score:', err);
-        // Fallback or alert
         alert('Could not connect to ranking server.');
     });
 }
@@ -225,3 +214,8 @@ function displayRanking(rankingData) {
     
     listDiv.classList.add('show-block');
 }
+
+// Expose functions to global scope
+window.startQuiz = startQuiz;
+window.handleAnswer = handleAnswer;
+window.submitScore = submitScore;
