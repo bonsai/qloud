@@ -24,6 +24,14 @@
       "destination": "/quiz/$1"
     },
     {
+      "source": "/game/(.*)",
+      "destination": "/game/$1"
+    },
+    {
+      "source": "/game",
+      "destination": "/game/index.html"
+    },
+    {
       "source": "/",
       "destination": "/quiz/quiz2.html"
     },
