@@ -8,7 +8,15 @@
       "destination": "/api/$1"
     },
     {
-      "source": "/img/(.*)",
+      "source": "/art/(.*)",
+      "destination": "/art/$1"
+    },
+    {
+      "source": "/art",
+      "destination": "/art/index.html"
+    },
+    {
+      "source": "/quiz/(.*)",
       "destination": "/img/$1"
     },
     {
@@ -110,6 +118,9 @@
   "functions": {
     "api/**/*.php": {
       "runtime": "vercel-php@0.7.1"
+    },
+    "api/**/*.go": {
+      "runtime": "vercel-go@latest"
     },
     "quiz/**/*.php": {
       "runtime": "vercel-php@0.7.1"
