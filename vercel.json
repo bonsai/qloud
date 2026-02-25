@@ -8,15 +8,19 @@
       "destination": "/api/$1"
     },
     {
-      "source": "/art/(.*)",
-      "destination": "/art/$1"
+      "source": "/apps/art/(.*)",
+      "destination": "/apps/art/$1"
     },
     {
-      "source": "/art",
-      "destination": "/art/index.html"
+      "source": "/apps/quiz/(.*)",
+      "destination": "/apps/quiz/$1"
     },
     {
-      "source": "/quiz/(.*)",
+      "source": "/apps/game/(.*)",
+      "destination": "/apps/game/$1"
+    },
+    {
+      "source": "/img/(.*)",
       "destination": "/img/$1"
     },
     {
@@ -28,28 +32,36 @@
       "destination": "/doc/$1"
     },
     {
+      "source": "/art/(.*)",
+      "destination": "/apps/art/$1"
+    },
+    {
+      "source": "/art",
+      "destination": "/apps/art/index.html"
+    },
+    {
       "source": "/quiz/(.*)",
-      "destination": "/quiz/$1"
+      "destination": "/apps/quiz/$1"
     },
     {
       "source": "/game/(.*)",
-      "destination": "/game/$1"
+      "destination": "/apps/game/$1"
     },
     {
       "source": "/game",
-      "destination": "/game/index.html"
+      "destination": "/apps/game/index.html"
     },
     {
       "source": "/",
-      "destination": "/quiz/quiz2.html"
+      "destination": "/apps/quiz/quiz2.html"
     },
     {
       "source": "/(style\\.css|app\\.js|manifest\\.json|sw\\.js|icon\\.png|quiz_data\\.json|ranking\\.json)",
-      "destination": "/quiz/$1"
+      "destination": "/apps/quiz/$1"
     },
     {
       "source": "/(.*)",
-      "destination": "/quiz/$1"
+      "destination": "/apps/quiz/$1"
     }
   ],
   "headers": [
@@ -122,7 +134,7 @@
     "api/**/*.go": {
       "runtime": "vercel-go@latest"
     },
-    "quiz/**/*.php": {
+    "apps/quiz/**/*.php": {
       "runtime": "vercel-php@0.7.1"
     }
   }

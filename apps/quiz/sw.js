@@ -5,8 +5,7 @@ const ASSETS = [
   './app.js',
   './quiz_data.json',
   './manifest.json',
-  './icon.png',
-  'https://unpkg.com/htmx.org@1.9.10'
+  './icon.png'
 ];
 
 self.addEventListener('install', (event) => {

@@ -88,14 +88,14 @@ function renderQuestion() {
         optionsHtml = options.map(opt => {
             const img = opt.images.find(img => img.score === 100) || opt.images[0];
             return `<button class="option-btn" onclick="handleAnswer('${opt.id}', this)">
-                        <img src="${img.path}" class="option-img" alt="Option">
+                        <img src="/${img.path}" class="option-img" alt="Option">
                     </button>`;
         }).join('');
 
     } else if (effectiveMode === 'image_to_text') {
         // Question: Image
         const qImg = item.images.find(img => img.score === 100) || item.images[0];
-        questionHtml = `<img src="${qImg.path}" class="question-img" alt="Question">`;
+        questionHtml = `<img src="/${qImg.path}" class="question-img" alt="Question">`;
         
         // Options: Text
         optionsHtml = options.map(opt => {
@@ -127,7 +127,7 @@ function renderQuestion() {
         optionsHtml = options.map(opt => {
             const img = opt.images.find(img => img.score === 100) || opt.images[0];
             return `<button class="option-btn" onclick="handleAnswer('${opt.id}', this)">
-                        <img src="${img.path}" class="option-img" alt="Option">
+                        <img src="/${img.path}" class="option-img" alt="Option">
                     </button>`;
         }).join('');
     }

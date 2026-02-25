@@ -48,7 +48,7 @@ function spawnIcon() {
     
     // Adjust path for deployment if necessary
     // On Vercel, the root is where vercel.json is
-    icon.src = '../' + randomPath; 
+    icon.src = '/' + randomPath; 
     icon.className = 'falling-icon';
     
     const startX = Math.random() * (window.innerWidth - 64);
