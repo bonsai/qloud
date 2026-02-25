@@ -8,12 +8,28 @@
       "destination": "/api/$1"
     },
     {
+      "source": "/img/(.*)",
+      "destination": "/img/$1"
+    },
+    {
+      "source": "/data/(.*)",
+      "destination": "/data/$1"
+    },
+    {
+      "source": "/doc/(.*)",
+      "destination": "/doc/$1"
+    },
+    {
       "source": "/quiz/(.*)",
       "destination": "/quiz/$1"
     },
     {
       "source": "/",
       "destination": "/quiz/quiz2.html"
+    },
+    {
+      "source": "/(style\\.css|app\\.js|manifest\\.json|sw\\.js|icon\\.png|quiz_data\\.json|ranking\\.json)",
+      "destination": "/quiz/$1"
     },
     {
       "source": "/(.*)",
@@ -39,7 +55,33 @@
       ]
     },
     {
-      "source": "/quiz/(.*\\.css)",
+      "source": "/(.*\\.css)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "text/css"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.(png|jpg|jpeg|gif|svg|ico))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -48,26 +90,20 @@
       ]
     },
     {
-      "source": "/quiz/(.*\\.js)",
+      "source": "/manifest\\.json",
       "headers": [
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/quiz/(.*\\.(png|jpg|jpeg|gif|svg|ico))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "key": "Content-Type",
+          "value": "application/manifest+json"
         }
       ]
     }
   ],
   "functions": {
     "api/**/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "quiz/**/*.php": {
       "runtime": "vercel-php@0.7.1"
     }
   }
